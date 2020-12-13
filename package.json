@@ -43,7 +43,7 @@
     "shx": "^0.2.2",
     "ts-node": "^3.2.0",
     "tslint": "^4.4.2",
-    "typescript": "^2.1.6"
+    "typescript": "^3.0.3"
   },
   "config": {
     "commitizen": {
