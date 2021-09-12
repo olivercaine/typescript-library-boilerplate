@@ -16,7 +16,7 @@
     "lint": "eslint -c .eslintrc.js --ext .ts lib",
     "lint:fix": "npm run lint -- --fix",
     "commit": "git-cz",
-    "ci:docker": "npm run docker -- npm ci",
+    "ci:docker": "npm run docker -- npm ci"
   },
   "husky": {
     "hooks": {
