@@ -23,9 +23,6 @@
       "pre-push": "concurrently 'npm run lint' 'npm test'; npm run lint:fix;"
     }
   },
-  "engines": {
-    "node": ">=10.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/goldenbearkin/typescript-library-boilerplate.git"
