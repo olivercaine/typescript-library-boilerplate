@@ -26,6 +26,6 @@ jobs:
     #   with:
     #     node-version: ${{ matrix.node-version }}
     #     cache: 'npm'
-    - run: npm run ci:docker
+    - run: npm run ci
     - run: npm run build:docker
     - run: npm run test:docker
