@@ -21,7 +21,7 @@
     "allowUnreachableCode": false, // Raise compiler error if code is unreachable
     "esModuleInterop": true, // Import non-ES modules as default imports.
     "removeComments": true, // Strip all comments from TypeScript files when converting into JavaScript
-    "declaration": true, // Generate .d.ts files for every TypeScript or JavaScript file inside your project. These .d.ts files are type definition files which describe the external API of your module.
+    "declaration": false, // Generate .d.ts files for every TypeScript or JavaScript file inside your project. These .d.ts files are type definition files which describe the external API of your module.
     "lib": [
       "es2015"
     ],
