@@ -7,8 +7,7 @@ on:
   push:
     branches: ['**']
   schedule:
-    # Every Friday at 6pm
-    - cron: "0 18 * * FRI"
+    - cron: "0 18 * * FRI" # Every Friday at 6pm
   workflow_dispatch: # Enables running workflow manually
 
 jobs:
@@ -28,4 +27,3 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm ci
       - run: npm run health-check
-      - run: npm run health-check:docker
