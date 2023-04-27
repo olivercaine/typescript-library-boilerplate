@@ -28,3 +28,4 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm ci
       - run: npm run health-check
+      - run: npm run health-check:docker
