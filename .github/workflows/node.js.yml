@@ -7,7 +7,9 @@ on:
     branches: [ modpack/latest ]
   pull_request:
     branches: ['**']
-  workflow_dispatch: # Enables running workflow manually
+  schedule:
+    - cron: '0 18 1 * *' # 1st of every month    
+  workflow_dispatch: # Enables running workflow manually  
 
 jobs:
   build:
