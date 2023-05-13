@@ -21,13 +21,22 @@ jobs:
         node-version: [ 14, 16, 18 ]
     steps:
     - uses: actions/checkout@v3
+    
     - name: Setup node
       uses: actions/setup-node@v3
       with:
         cache: 'npm'
         node-version: ${{ matrix.node }}
     - run: npm ci
-    - run: npm run health-check
+
+    - name: Auto-lint app
+      shell: bash      
+      run: |
+        ./.github/workflows/code-lint.sh     
+
+    - name: Perform health check
+      run: npm run health-check 
+
     - uses: actions/upload-artifact@v2
       with:
         name: dist
