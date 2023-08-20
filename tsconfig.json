@@ -17,12 +17,10 @@
     "noImplicitAny": false, // Don't throw errors by falling back to type any for JS imports https://www.typescriptlang.org/tsconfig#noImplicitAny
     "noImplicitReturns": true, // Ensure all code paths in a function to ensure they return a value
     "noUncheckedIndexedAccess": true, // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess - check key exists before setting it's value
-    "noUnusedLocals": false, // Report errors on unused local variables
     "outDir": "./dist", // If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory.
     "removeComments": true, // Strip all comments from TypeScript files when converting into JavaScript
     "sourceMap": true, // Enables the generation of sourcemap files to display original TypeScript source code
     "strict": true, // Results in stronger guarantees of program correctness
-    "strictNullChecks": true, // https://www.typescriptlang.org/tsconfig#strictNullChecks
     "target": "es5", // Target es5 for IE9/10 strict - https://www.typescriptlang.org/tsconfig#target
     "typeRoots": [
       "./node_modules",
