@@ -1,7 +1,7 @@
 {
+  "extends": "@olliecaine/tsconfig",
   "compilerOptions": { // https://www.typescriptlang.org/tsconfig
     "allowSyntheticDefaultImports": true, // Allows you name `* as` in import, e.g. `import React from "react"`
-    "allowUnreachableCode": false, // Raise compiler error if code is unreachable
     "baseUrl": "src", // Set a base directory to resolve non-absolute module names.
     "declaration": true, // Generate .d.ts files for every TypeScript or JavaScript file inside your project. These .d.ts files are type definition files which describe the external API of your module.
     "diagnostics": true, // Used to output diagnostic information for debugging
@@ -18,7 +18,6 @@
     "noImplicitReturns": true, // Ensure all code paths in a function to ensure they return a value
     "noUncheckedIndexedAccess": true, // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess - check key exists before setting it's value
     "noUnusedLocals": false, // Report errors on unused local variables
-    "noUnusedParameters": false, // Report errors on unused parameters in functions
     "outDir": "./dist", // If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory.
     "removeComments": true, // Strip all comments from TypeScript files when converting into JavaScript
     "sourceMap": true, // Enables the generation of sourcemap files to display original TypeScript source code
