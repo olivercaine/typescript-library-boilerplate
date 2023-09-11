@@ -15,7 +15,7 @@
     "test:watch": "mocha -w --compilers ts:ts-node/register 'src/**/*.spec.ts'",
     "compile": "tsc",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && cp package-lock.json dist && ts-node tools/cleanup.ts && cp README.md dist",
-    "health-check": "time concurrently --group --kill-others-on-fail --timings 'npm run lint --quiet' 'npm run compile' 'npm run build' 'npm test'",
+    "health-check": "time concurrently --group --kill-others-on-fail 'npm run lint --quiet' 'npm run compile' 'npm run build' 'npm test'",
     "health-check:docker": "docker run --rm -it -w /app -v ${PWD}:/app $(docker build . -q) sh -c 'npm run health-check'",
     "commit": "git-cz"
   },
@@ -42,6 +42,7 @@
   },
   "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
   "devDependencies": {
+    "@olliecaine/eslint-config": "^1.0.3",
     "@olliecaine/tsconfig": "^1.0.9",
     "@types/chai": "4.3.4",
     "@types/mocha": "5.2.7",
