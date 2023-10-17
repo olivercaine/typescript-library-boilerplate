@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
   "devDependencies": {
-    "@olliecaine/eslint-config": "^1.0.5",
+    "@olliecaine/eslint-config": "^1.0.6",
     "@olliecaine/tsconfig": "^1.0.10",
     "@types/chai": "4.3.4",
     "@types/mocha": "5.2.7",
@@ -58,8 +58,6 @@
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsdoc": "30.7.13",
-    "eslint-plugin-no-null": "1.0.2",
-    "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-promise": "^3.8.0",
