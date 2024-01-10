@@ -14,13 +14,13 @@ const config: Config.InitialOptions = {
   // clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: true,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  // coverageDirectory: 'coverage',
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -100,7 +100,7 @@ const config: Config.InitialOptions = {
   // reporters: undefined,
 
   // Automatically reset mock state before every test
-  // resetMocks: false,
+  resetMocks: true,
 
   // Reset the module registry before running each individual test
   // resetModules: false,
@@ -109,7 +109,7 @@ const config: Config.InitialOptions = {
   // resolver: undefined,
 
   // Automatically restore mock state and implementation before every test
-  // restoreMocks: false,
+  restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
   // rootDir: undefined,
@@ -151,9 +151,9 @@ const config: Config.InitialOptions = {
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  // testPathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  testPathIgnorePatterns: [
+    '/node_modules/'
+  ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
