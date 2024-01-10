@@ -1,4 +1,5 @@
 {
+  "extends": "@olliecaine/tsconfig",
   "compilerOptions": {
     "baseUrl": "src", // Set a base directory to resolve non-absolute module names.
     "declaration": true, // Generate .d.ts files for every TypeScript or JavaScript file inside your project. These .d.ts files are type definition files which describe the external API of your module.
