@@ -12,7 +12,6 @@
     ],
     "module": "commonjs", // https://www.typescriptlang.org/tsconfig#module
     "noImplicitAny": false, // Don't throw errors by falling back to type any for JS imports https://www.typescriptlang.org/tsconfig#noImplicitAny
-    "noImplicitReturns": true, // Ensure all code paths in a function to ensure they return a value
     "outDir": "./dist", // If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory.
     "sourceMap": true, // Enables the generation of sourcemap files to display original TypeScript source code
     "typeRoots": [
