@@ -7,8 +7,6 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#5fe8a1"
   },
-  "mochaExplorer.files": "lib/**/*.spec.*",
-  "mochaExplorer.require": "ts-node/register",
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
