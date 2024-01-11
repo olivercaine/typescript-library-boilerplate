@@ -1,6 +1,9 @@
-import type { Config } from '@jest/types'
+import type { Config } from 'jest'
 
-const config: Config.InitialOptions = {
+/**
+ * Jest docs: {@link https://jestjs.io/docs/configuration}
+ */
+const config: Config = {
   // All imported modules in your tests should be mocked automatically
   // automock: true, - TODO play around with this to see I we want to enable it
 
