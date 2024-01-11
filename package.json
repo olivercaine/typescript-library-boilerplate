@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
   "devDependencies": {
-    "@olliecaine/eslint-config": "^1.0.6",
+    "@olliecaine/eslint-config": "^1.0.7",
     "@olliecaine/tsconfig": "^1.0.11",
     "@types/jest": "^27.0.2",
     "@types/node": "10.17.60",
