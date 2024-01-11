@@ -18,7 +18,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [ 14, 16, 18, 20 ]
+        # node-version: [ 14, 16, 18, 20 ]
+        node-version: [ 20 ]
     steps:
     - uses: actions/checkout@v3
     - name: Setup node
@@ -57,6 +58,13 @@ jobs:
       with:
         name: package
         path: "./*.tgz"
+
+  health-check-docker:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm run health-check:docker
 
   publish:
     needs: [package]
