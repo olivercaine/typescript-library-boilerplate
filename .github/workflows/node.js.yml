@@ -29,7 +29,7 @@ jobs:
         node-version: ${{ matrix.node }}
     - run: npm ci
     - run: npm run health-check
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4.6.1
       with:
         name: dist
         path: dist
@@ -54,7 +54,7 @@ jobs:
         npm pack
         ls
     - name: Upload
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.6.1
       with:
         name: package
         path: "./*.tgz"
