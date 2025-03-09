@@ -10,7 +10,7 @@ on:
       - ready_for_review
     # Optional: specify branches if you want to limit this to certain branches
     branches:
-      - modpack/latest # Default branch
+      - main # Default branch
 
 # Permissions needed for the workflow
 permissions:
