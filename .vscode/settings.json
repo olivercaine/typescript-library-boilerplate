@@ -7,10 +7,10 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#5fe8a1"
   },
-  "eslint.alwaysShowStatus": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "eslint.run": "onType",
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
-  "eslint.run": "onSave",
   "eslint.validate": [
     "javascript",
     "typescript"
