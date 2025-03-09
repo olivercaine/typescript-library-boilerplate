@@ -14,7 +14,7 @@ const config: Config = {
   // cacheDirectory: "/private/var/folders/wz/q7jjxq4144dc1x8vytqtkbd80000gn/T/jest_dx",
 
   // Automatically clear mock calls, instances and results before every test
-  // clearMocks: true,
+  clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
@@ -146,8 +146,7 @@ const config: Config = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  // testEnvironment: 'jsdom',
-  testEnvironment: 'node',
+  testEnvironment: 'node', // Use 'jsdom' if testing browser-like code (e.g., React)
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -162,7 +161,9 @@ const config: Config = {
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: [
-    '/node_modules/'
+    '/node_modules/',
+    '/dist/',
+    '/build/'
   ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
@@ -199,7 +200,11 @@ const config: Config = {
   verbose: true,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
-  // watchPathIgnorePatterns: [],
+  watchPathIgnorePatterns: [
+    '/node_modules/',
+    '/dist/',
+    '/build/'
+  ],
 
   // Whether to use watchman for file crawling
   // watchman: true,
