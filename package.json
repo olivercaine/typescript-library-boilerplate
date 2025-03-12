@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "A simple tree-shakable TypeScript library boilerplate",
   "main": "typescript-library-boilerplate.bundle.js",
-  "jsnext:main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "jsnext:main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "concurrently 'npm install' 'npm run test:watch'",
     "dev:docker": "docker run --rm -it -w /app -v ${PWD}:/app $(docker build . -q) sh -c 'npm run dev'",
