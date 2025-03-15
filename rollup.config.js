@@ -1,17 +1,31 @@
+import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import typescript from '@rollup/plugin-typescript';
+
 export default {
+  input: 'src/index.ts',
   output: {
+    file: 'dist/typescript-library-boilerplate.bundle.js',
     format: 'umd',
-    name: 'typescript-library-boilerplate'
+    name: 'typescript-library-boilerplate',
+    sourcemap: true
   },
+  plugins: [
+    nodeResolve(),
+    commonjs(),
+    typescript({
+      tsconfig: './tsconfig-esm.json'
+    })
+  ],
   external: [
     // put some third party libraries here
   ],
-  onwarn: ( warning ) => {
-      const skip_codes = [
-          'THIS_IS_UNDEFINED',
-          'MISSING_GLOBAL_NAME'
-      ];
-      if ( skip_codes.indexOf(warning.code) != -1 ) return;
-      console.error(warning);
+  onwarn: (warning) => {
+    const skip_codes = [
+      'THIS_IS_UNDEFINED',
+      'MISSING_GLOBAL_NAME'
+    ];
+    if (skip_codes.indexOf(warning.code) !== -1) return;
+    console.error(warning);
   }
 };
