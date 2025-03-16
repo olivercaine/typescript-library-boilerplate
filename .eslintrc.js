@@ -1,33 +1,44 @@
-module.exports ={
+/* eslint-disable pure/pure */
+
+module.exports = {
   root: true,
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   extends: [
-    "standard",
-    "@olliecaine/eslint-config"
+    'standard',
+    '@olliecaine/eslint-config'
   ],
   plugins: [
-    "promise",
-    "pure"
+    'promise',
+    'pure',
+    'eslint-plugin-jest'
   ],
   env: {
-    browser : true,
-    jest    : true,
-    node    : true
+    browser: true,
+    jest: true,
+    'jest/globals': true
   },
   globals: {
-    expect       : false,
-    should       : false,
-    sinon        : false,
-    __DEV__      : false,
-    __TEST__     : false,
-    __PROD__     : false,
-    __COVERAGE__ : false
+    expect: false,
+    should: false,
+    sinon: false,
+    __DEV__: false,
+    __TEST__: false,
+    __PROD__: false,
+    __COVERAGE__: false
   },
   rules: {
-    "jsx-quotes"                  : [2, "prefer-single"],
-    "no-case-declarations"        : 2,
-    "comma-dangle"                : "off",
-    "no-undef"                    : "off",
-    "one-var"                     : "off"
-  }
+    'jsx-quotes': [2, 'prefer-single'],
+    'no-case-declarations': 2,
+    'comma-dangle': 'off',
+    'no-undef': 'off',
+    'one-var': 'off',
+    'jest/padding-around-all': 'error',
+    'jest/no-identical-title': 'error'
+  },
+  overrides: [{
+    files: ['**/*.tests.*'],
+    rules: {
+      'pure/pure': 'off'
+    }
+  }]
 }
