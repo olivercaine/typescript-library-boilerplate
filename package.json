@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/goldenbearkin/typescript-library-boilerplate.git"
+    "url": "https://github.com/olivercaine/typescript-library-boilerplate.git"
   },
   "keywords": [
     "typescript",
@@ -36,12 +36,12 @@
     "es2015",
     "mocha"
   ],
-  "author": "goldenbearkin <huihangkin@gmail.com>",
+  "author": "olivercaine <olliecaine@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goldenbearkin/typescript-library-boilerplate/issues"
+    "url": "https://github.com/olivercaine/typescript-library-boilerplate/issues"
   },
-  "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
+  "homepage": "https://github.com/olivercaine/typescript-library-boilerplate#readme",
   "devDependencies": {
     "@olliecaine/eslint-config": "^1.0.13",
     "@olliecaine/tsconfig": "^1.0.18",
@@ -58,6 +58,7 @@
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-jsdoc": "^48.2.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
