@@ -1,5 +1,3 @@
-/* eslint-disable pure/pure */
-
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -9,13 +7,12 @@ module.exports = {
   ],
   plugins: [
     'promise',
-    'pure',
-    'eslint-plugin-jest'
+    'pure'
   ],
   env: {
     browser: true,
     jest: true,
-    'jest/globals': true
+    node: true
   },
   globals: {
     expect: false,
@@ -31,14 +28,6 @@ module.exports = {
     'no-case-declarations': 2,
     'comma-dangle': 'off',
     'no-undef': 'off',
-    'one-var': 'off',
-    'jest/padding-around-all': 'error',
-    'jest/no-identical-title': 'error'
-  },
-  overrides: [{
-    files: ['**/*.tests.*'],
-    rules: {
-      'pure/pure': 'off'
-    }
-  }]
+    'one-var': 'off'
+  }
 }
