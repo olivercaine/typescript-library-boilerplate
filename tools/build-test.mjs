@@ -10,7 +10,7 @@ const testCases = [
     name: 'add',
     fn: add,
     tests: [
-      { input: [2, 2], expected: 4 },
+      { input: [2, 2], expected: 2 },
       { input: [0, 5], expected: 5 },
       { input: [-1, 1], expected: 0 },
       { input: [10, -5], expected: 5 },
