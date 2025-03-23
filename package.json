@@ -4,8 +4,8 @@
   "description": "A simple tree-shakable TypeScript library boilerplate",
   "type": "module",
   "main": "dist/typescript-library-boilerplate.bundle.js",
-  "jsnext:main": "dist/index.js",
-  "module": "dist/index.js",
+  "jsnext:main": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "concurrently 'npm install' 'npm run test:watch'",
@@ -15,7 +15,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "compile": "tsc",
-    "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c && cp package.json dist && cp package-lock.json dist && node tools/cleanup.js && cp README.md dist",
+    "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c && cp package.json dist && cp package-lock.json dist && node tools/cleanup.js && cp README.md dist && node tools/build-test.mjs",
     "health-check": "time concurrently --group --kill-others-on-fail 'npm run lint' 'npm run compile' 'npm run build' 'npm test'",
     "health-check:docker": "docker run --rm -w /app -v ${PWD}:/app $(docker build . -q) sh -c 'npm ci && npm run health-check'",
     "commit": "git-cz"
