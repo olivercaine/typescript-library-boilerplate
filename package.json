@@ -2,9 +2,8 @@
   "name": "@olivercaine/typescript-library-boilerplate",
   "version": "0.0.0",
   "description": "A simple tree-shakable TypeScript library boilerplate",
-  "type": "module",
   "main": "dist/typescript-library-boilerplate.bundle.js",
-  "jsnext:main": "dist/index.mjs",
+  "type": "commonjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
